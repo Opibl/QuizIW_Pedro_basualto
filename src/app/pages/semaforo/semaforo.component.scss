@@ -1,0 +1,41 @@
+h1{
+    font-size: 1.5em;
+    float: left;
+    position: absolute;
+}
+
+#rojo{
+    position: relative;
+    height: 1em;
+    width: 1em;
+    background-color: red;
+    border-radius: 3em;
+    top: 1em;
+    left: 22em;
+    float: left;
+}
+
+#amarillo{
+    position:relative;
+    height: 1em;
+    width: 1em;
+    background-color: rgb(230, 215, 5);
+    border-radius: 3em;
+    float: left;
+    left: 26em;
+    top: 1em;
+}
+
+#verde{
+    position: relative;
+    height: 1em;
+    width: 1em;
+    background-color: rgb(21, 226, 99);
+    border-radius: 3em;
+    left: 32em;
+    top: 1em;
+}
+
+#margin{
+    margin-bottom: 5em;
+}

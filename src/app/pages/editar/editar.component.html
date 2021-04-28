@@ -1,0 +1,31 @@
+<app-semaforo></app-semaforo>
+<form [formGroup]="formulario" (ngSubmit)="Crear($event)" id="formulario" novalidate (ngSubmit) = "save($event)">
+ 
+    <ul>
+      <li>
+          Titulo
+          <br>
+          <input formControlName = "titulo" type="text">
+          <p *ngIf="f.titulo.errors?.required">campo requerido</p>
+      </li>
+      
+      <li>
+        
+        Estado
+        <br>
+        <select  formControlName ="estado">
+            <option>select</option>
+            <option>iniciada</option>
+            <option>En Proceso</option>
+            <option>Terminada</option>
+        </select>
+        <p *ngIf="f.estado.errors?.required && estado.touched">campo requerido</p>
+      </li>
+
+      <br>
+      <li id="botones">
+        <a [routerLink]="['']" routerLinkActive="router-link-active" ><input type="button" value="actualizar" [disabled]= "formulario.invalid"></a>
+      </li>
+    </ul>  
+     
+</form>  

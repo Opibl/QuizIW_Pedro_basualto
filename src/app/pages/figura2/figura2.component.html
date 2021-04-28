@@ -1,0 +1,32 @@
+<app-semaforo></app-semaforo>
+
+<table>
+    <tr>
+        <th>iniciado</th>
+        <th>En Proceso</th>
+        <th>Terminada</th>
+    </tr>
+
+    <td id="b1"> 
+        <tr *ngFor="let item of Lista1"> 
+            <td><a [routerLink]="['/editar']" routerLinkActive="router-link-active" >{{item.titulo}}</a></td>
+            <input type="button" value="X" (click)= "borrar()">
+        </tr>
+    </td>
+
+    <td id="b2"> 
+        <tr *ngFor="let item of Lista2"> 
+            <td><a>{{item.titulo}}</a></td>
+        </tr>
+    </td>
+
+    <td id="b3"> 
+        <tr *ngFor="let item of Lista3"> 
+            <td><a>{{item.titulo}}</a></td>
+        </tr>
+    </td>
+</table>
+
+
+
+<a [routerLink]="['']" routerLinkActive="router-link-active" ><input type="button" value="+" id="adicionar"> adicionar</a>

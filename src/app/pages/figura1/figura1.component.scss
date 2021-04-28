@@ -1,0 +1,66 @@
+li{
+   list-style: none;
+}
+
+form{
+    margin-top: 6em;
+    margin-left: 30%;
+}
+
+#botones input{
+    margin: 0.1em;
+    
+}
+
+#I li{
+
+    margin-left: 40em;
+    align-items: center;
+    background-color: red;
+    width: 10em;
+    height: 4em;
+    display: block;
+}
+
+#I li input{
+
+    position: relative;
+    top: auto;
+    
+}
+
+
+
+#P li{
+    margin-left: 17em;
+    align-items: center;
+    background-color: yellow;
+    width: 10em;
+    height: 4em;
+    display: block;
+    
+}
+
+#T li{
+    margin-left: 1em;
+    align-items: center;
+    background-color: green;
+    width: 10em;
+    height: 4em;
+    display: block;
+    
+}
+
+
+#fila1{
+    margin-top: auto;
+}
+
+#fila2{
+    margin-top: auto;
+}
+
+#fila3{
+    margin-top: auto;
+}
+
